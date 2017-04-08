@@ -1,0 +1,40 @@
+﻿@{
+    Style.Include("Style.css");
+	Style.Include("ListNews.Style.css");
+}
+<div id="news-detail">
+    <div class="newscontent">
+        <div class="news-content-body">
+            <h4>@Model.NewsTitle</h4>
+            <div id="news_author"><p>时间：@Model.NewsDate&nbsp;&nbsp;来源：@Model.NewsOrigin&nbsp;&nbsp;作者：@Model.NewsAuthor</p></div>
+            <div class="news-detaltext">
+                <div>@Html.Raw(@Model.Newsdetaltext)</div>
+                <img src=@Model.NewsImg />
+            </div>
+            
+            <div class="article-switch">
+                @{
+                    if (@Model.prevNewsRecode != null)
+                    {
+                        <p>上一篇：<a href=@Model.prevNewsRecode.Id>@Model.prevNewsRecode.NewsTitle</a></p>
+                    }
+                    else
+                    {
+                        <p>上一篇：没有了</p>
+                    }
+                }
+
+                @{
+                    if (@Model.nextNewsRecode != null)
+                    {
+                        <p>下一篇：<a href=@Model.nextNewsRecode.Id>@Model.nextNewsRecode.NewsTitle</a></p>
+                    }
+                    else
+                    {
+                        <p>下一篇：没有了</p>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>

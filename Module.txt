@@ -1,0 +1,12 @@
+﻿Name: ListNews
+AntiForgery: enabled
+Author: 青海基础地理信息中心
+Website: #
+Version: 0.0.1
+OrchardVersion: 1.10.1
+Description: 可以展示不同的新闻类型。本模块支持列表新闻（Listnews）及其对应的详情页展示。
+Features:
+    ListNews:
+        Name: ListNews
+        Description: 可以展示不同的新闻类型。本模块支持列表新闻（Listnews）及其对应的详情页展示。
+        Category: News

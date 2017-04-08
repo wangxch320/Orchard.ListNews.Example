@@ -1,0 +1,79 @@
+﻿@{
+    Style.Include("ListNewsTempStyle.css");
+	Script.Include("jquery/jquery.min.js");
+	Script.Include("jquery.slideBox.modify.js");
+	Script.Include("QhchListNews.js");
+}
+
+<div id="listNews">
+    <div id="listNews-title">
+        <ul>
+            @{
+                if (@Model.ListNewsType != null)
+                {
+                    foreach (var ListNewsType in @Model.ListNewsType)
+                    {
+                        <li>@ListNewsType</li>
+                    }
+                }else
+                {
+                    <li>sorry newsTypes null</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="tab-content">
+        @{
+            if (@Model.NewsUrlListAll != null)
+            {
+                var i = 0;
+                foreach (var NewsUrlList in @Model.NewsUrlListAll)
+                {
+                    if(i == 0)
+                    {
+                        <div class="listNews-content" style="display: block";>
+                            <ul>
+                                @{
+                                    if (NewsUrlList != null)
+                                    {
+                                        var k = 0;
+                                        foreach (var NewsUrl in NewsUrlList)
+                                        {
+                                            <li><a href=@NewsUrl>@Model.NewsUrlTitletAll[i][k]</a><span>[@Model.NewsUrlDataAll[i][k]]</span></li>
+                                            k++;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <li>很抱歉，此处新闻内容为空，或加载失败，请联系管理管block</li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    }else
+                    {
+                        <div class="listNews-content" style="display: none";>
+                            <ul>
+                                @{
+                                    if (NewsUrlList != null)
+                                    {
+                                        var k = 0;
+                                        foreach (var NewsUrl in NewsUrlList)
+                                        {
+                                            <li><a href=@NewsUrl>@Model.NewsUrlTitletAll[i][k]</a><span>[@Model.NewsUrlDataAll[i][k]]</span></li>
+                                            k++;
+                                        }
+                                    }else
+                                    {
+                                        <li>很抱歉，此处新闻内容为空，或加载失败，请联系管理管</li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    }
+                    i++;
+                }
+            }
+        }
+    </div>
+</div>

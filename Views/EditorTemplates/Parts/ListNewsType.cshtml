@@ -1,0 +1,10 @@
+﻿@model ListNewsType.Models.ListNewsTypePart
+<fieldset>
+    <label class="sub" for="ListNewsType">@T("新闻类型")</label><br />
+    <div style="color: orangered">说明：此处填写新闻类型中文名</div>
+    @Html.TextBoxFor(m => m.ListNewsType, new { @class = "text" })<br />
+
+    <label class="sub" for="ListNewsTypeName">@T("新闻类型别名")</label><br />
+    <div style="color: orangered">说明：此处填写新闻类型英文别名</div>
+    @Html.TextBoxFor(m => m.ListNewsTypeName, new { @class = "text" })<br />
+</fieldset>

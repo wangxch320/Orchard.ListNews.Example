@@ -1,0 +1,40 @@
+﻿
+@model ListNews.ViewModel.EditListNewsDetailViewModel
+
+@{
+    Style.Include("bootstrap.min.css");
+    Style.Include("bootstrapDatepickr-1.0.0.min.css");
+    Style.Include("ListNewsTempStyle.css");
+    Script.Include("jquery-1.7.2.min.js");
+    Script.Include("bootstrapDatepickr-1.0.0.min.js");
+    Script.Include("QhchListNews.js");
+
+}
+
+<fieldset>
+
+    <label class="sub" for="NewsTitle">@T("新闻标题")</label><br />
+    @Html.TextBoxFor(m => m.NewsTitle, new { @class = "text form-control" })<br />
+
+    <label class="sub" for="NewsTitle">@T("新闻类型")</label><br />
+    @Html.DropDownListFor(m => m.NewsTypeof, Model.ListNewsType.Select(s => new SelectListItem {
+                                            Selected = s.Id != null,
+                                            Text = s.ListNewsType,
+                                            Value = s.ListNewsType
+                                            }))<br />
+
+    <label class="sub" for="NewsDate">@T("时间")</label><br />
+    @Html.TextBoxFor(m => m.NewsDate, new { @class = "text form-control" })<br />
+
+    <label class="sub" for="NewsAuthor">@T("作者")</label><br />
+    @Html.TextBoxFor(m => m.NewsAuthor, new { @class = "text form-control" })<br />
+
+    <label class="sub" for="NewsOrigin">@T("来源")</label><br />
+    @Html.TextBoxFor(m => m.NewsOrigin, new { @class = "text form-control" })<br />
+
+    <label class="sub" for="NewsImg">@T("新闻图片")</label><br />
+    @Html.TextBoxFor(m => m.NewsImg, new { @class = "text form-control" })<br />
+
+    <label class="sub" for="Newsdetaltext">@T("新闻详细信息")</label><br />
+    @Html.TextAreaFor(m => m.Newsdetaltext, new { @class = "text form-control" })<br />
+</fieldset>

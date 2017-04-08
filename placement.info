@@ -1,0 +1,8 @@
+<Placement>
+    <Place Parts_ListNews_Edit="Content:2"/>
+    <Place Parts_ListNews="Content:2"/>
+    <Place Parts_ListNewsDetail_Edit="Content:3"/>
+    <Place Parts_ListNewsDetail="Content:3"/>
+    <Place Parts_ListNewsType_Edit="Content:2"/>
+    <Place Parts_ListNewsType="Content:2"/>
+</Placement>
