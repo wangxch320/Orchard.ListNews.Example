@@ -151,3 +151,6 @@ C:\Users\Administrator\Desktop\qhch\Orchard-1.10.1999 - 副本 - 副本\Orchard-
 C:\Users\Administrator\Desktop\qhch\Orchard-1.10.1999 - 副本 - 副本\Orchard-1.10.1\src\Orchard.Web\Modules\ListNews\obj\Debug\ListNews.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\qhch\Orchard-1.10.1999 - 副本 - 副本\Orchard-1.10.1\src\Orchard.Web\Modules\ListNews\obj\Debug\ListNews.dll
 C:\Users\Administrator\Desktop\qhch\Orchard-1.10.1999 - 副本 - 副本\Orchard-1.10.1\src\Orchard.Web\Modules\ListNews\obj\Debug\ListNews.pdb
+C:\Users\Administrator\Personal\data\SourceApp\Orchard.Extent.Exampler\obj\Debug\ListNews.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Personal\data\SourceApp\Orchard.Extent.Exampler\obj\Debug\ListNews.dll
+C:\Users\Administrator\Personal\data\SourceApp\Orchard.Extent.Exampler\obj\Debug\ListNews.pdb
